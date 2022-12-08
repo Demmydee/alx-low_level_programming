@@ -1,6 +1,4 @@
-/**This program prints a string
- *starting with a quote 
- */
+/*This program prints a string*/ 
 #include <stdio.h>
 int main(void)
 {
