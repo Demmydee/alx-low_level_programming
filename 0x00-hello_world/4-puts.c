@@ -1,4 +1,4 @@
-/*This program prints a string
+/**This program prints a string
  *starting with a quote 
  */
 #include <stdio.h>
