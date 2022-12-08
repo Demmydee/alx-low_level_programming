@@ -2,7 +2,7 @@
 /**
  * main - This is the entry point
  *
- * return - is a success if it's zero
+ * return: must be 0
  */
 int main(void)
 {
