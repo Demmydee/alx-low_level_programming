@@ -7,11 +7,12 @@
 
 int main(void)
 {
-	char c;
+	int c[26];
+	char i;
 
-	for (c = 'a'; c <= 'z'; ++c)
+	for (i = 'a'; i <= 'z'; ++i)
 	{
-		putchar('c');
+		putchar(c[i]);
 	}
 	return (0);
 }
