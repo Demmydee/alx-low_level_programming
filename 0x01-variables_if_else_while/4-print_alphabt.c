@@ -12,6 +12,9 @@ int main(void)
 	char q;
 	char e;
 
+	q = 'q';
+	e = 'e';
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		if ((c != q) || (c != e))
