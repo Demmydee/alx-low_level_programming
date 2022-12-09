@@ -9,6 +9,8 @@
 int main(void)
 {
 	char c;
+	char q;
+	char e;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
