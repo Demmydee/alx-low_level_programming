@@ -14,9 +14,9 @@ int main(void)
 	x = 0;
 	for (c = '0'; c <= '9'; c++)
 	{
+		x = c + 1;
 		while (x <= 9)
 		{
-		x = c + 1;
 		putchar(c);
 		putchar(x);
 			if (c != 8 && x != 9)
