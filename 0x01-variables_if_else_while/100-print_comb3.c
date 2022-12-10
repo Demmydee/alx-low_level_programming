@@ -11,20 +11,19 @@ int main(void)
 	int c;
 	int x;
 
-	x = 0;
 	for (c = '0'; c <= '9'; c++)
 	{
 		x = c + 1;
-		while (x <= 9)
+		while (x <= '9')
 		{
 		putchar(c);
 		putchar(x);
-			if (c != 8 && x != 9)
+			if (c != '8' && x != '9')
 			{
 			putchar(',');
 			putchar(' ');
 			}
-		x++;
+		++x;
 		}
 	}
 		putchar('\n');
