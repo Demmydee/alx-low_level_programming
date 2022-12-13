@@ -2,11 +2,17 @@
 /**
  * main - entry point
  *
- * return: must be zero
+ * Return: must be zero
  */
-int main()
+int main(void)
 {
-	char _putchar;
-	putchar(_putchar);
+	char _putchar([8]) = "_putchar";
+	int i;
+
+	for (i = 0; i < 8; i++)
+	{
+		putchar(_putchar[i]);
+	}
+	putchar('\n');
 	return (0);
 }
