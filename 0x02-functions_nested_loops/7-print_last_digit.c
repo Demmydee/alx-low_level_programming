@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit - entry point 
+ * print_last_digit - entry point
  * @r: input
  * Return: last digit of any given number
  */
@@ -13,6 +13,6 @@ int print_last_digit(int r)
 	else
 		n = r % 10;
 
-	_putchar((n%10) + '0');
+	_putchar((n % 10) + '0');
 	return (n % 10);
 }
