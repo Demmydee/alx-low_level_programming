@@ -8,7 +8,7 @@
 
 int _isalpha(int c)
 {
-	char i j; /* lower cse and upper case */
+	char i, j; /* lower case and upper case */
 	int k = 0; 
 
 	for (i = 'a'; i <= 'z'; i++)
