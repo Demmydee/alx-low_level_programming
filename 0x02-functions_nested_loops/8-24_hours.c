@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - entry point
- * 
+ *
  * Return:0
  */
 void jack_bauer(void)
@@ -18,6 +18,6 @@ void jack_bauer(void)
 			_putchar((min / 10) + '0');
 			_putchar((min % 10) + '0');
 			_putchar ('\n');
-		}	
+		}
 	}
 }
