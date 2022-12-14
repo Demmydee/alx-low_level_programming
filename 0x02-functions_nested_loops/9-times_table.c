@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * time_table - entry point
+ * times_table - entry point
  * Return: 0
  */
 void times_table(void)
@@ -10,7 +10,6 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		
 		for (j = 0; j <= 9; j++)
 		{
 			k = i * j;
