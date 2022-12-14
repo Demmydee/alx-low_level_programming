@@ -2,7 +2,7 @@
 /**
  * _abs - entry point
  * @r: input
- * Return: absolute value 
+ * Return: absolute values
  */
 int _abs(int r)
 {
