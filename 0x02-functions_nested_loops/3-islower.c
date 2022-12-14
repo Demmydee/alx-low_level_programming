@@ -2,7 +2,7 @@
 
 /**
  * _islower - entry point
- *
+ * c: test input
  * Return: 1 if lowercase otherwise 0
  */
 
