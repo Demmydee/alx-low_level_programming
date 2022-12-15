@@ -16,6 +16,7 @@ int _isupper(int c)
 		if (i == c)
 		{
 			upper = 1;
+			break;
 		}
 	}
 	return (upper);
