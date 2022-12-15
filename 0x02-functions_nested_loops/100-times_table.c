@@ -34,7 +34,7 @@ void putformat(int n)
 		_putchar(' ');
 		_putchar(n % 10 + '0');
 	}
-	else
+	else if
 	{
 		_putchar(',');
 		_putchar(' ');
