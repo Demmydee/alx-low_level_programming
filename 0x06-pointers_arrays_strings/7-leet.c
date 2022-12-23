@@ -4,7 +4,7 @@
  * @str: input string
  * Return: string
  */
-char *leet(char *)
+char *leet(char *str)
 {
 	int i, j;
 	char x1[] = "aAeEoOtTlL";
@@ -21,4 +21,4 @@ char *leet(char *)
 		}
 	}
 	return (str);
-}
+
