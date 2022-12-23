@@ -1,8 +1,8 @@
-#inlude "main.h"
+#include "main.h"
 
 /**
- * reverse_array - reverses the content of an array of integer
- * @*a: element of the array
+ * reverse_array - reverses an array of integer
+ * @a: element of the array
  * @n: number of elements of the array
  * Return: nothing
  */
