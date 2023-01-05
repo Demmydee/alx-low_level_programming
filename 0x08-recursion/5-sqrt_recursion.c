@@ -17,6 +17,7 @@ int _sqrt_recursion(int n)
  * @i: iterator
  * Return: -1 if n has no natural square root otherwise return 0
  */
+int actual_sqrt_recursion(int n, int i)
 {
 	if (i * i > n)
 		return (-1);
