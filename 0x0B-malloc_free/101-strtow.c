@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -11,7 +11,7 @@
 char **strtow(char *str)
 {
 	char **array;
-	int i = 0, j, x, y = 0, len = 0, cnt = 0;
+	int i = 0, x, y = 0, len = 0, cnt = 0;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
@@ -32,7 +32,8 @@ char **strtow(char *str)
 		{
 			len = 0;
 			x = i;
-			while ((str[x] != ' ' || str[x] != '\t') && str[x] != '\0')
+			while ((str[x] != ' ' || str[x] != '\t') && 
+					str[x] != '\0')
 				x++, len++;
 			array[y] = malloc((len + 1) * sizeof(char));
 			if (array[y] == NULL)
