@@ -32,7 +32,7 @@ char **strtow(char *str)
 		{
 			len = 0;
 			x = i;
-			while ((str[x] != ' ' || str[x] != '\t') && 
+			while ((str[x] != ' ' || str[x] != '\t') &&
 					str[x] != '\0')
 				x++, len++;
 			array[y] = malloc((len + 1) * sizeof(char));
