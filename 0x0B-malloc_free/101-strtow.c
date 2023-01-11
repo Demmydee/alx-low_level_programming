@@ -2,6 +2,31 @@
 #include <stdlib.h>
 
 /**
+ * count_word - counts the number of words in a string
+ * @s: string to count
+ * Return: number of wwords
+ */
+int count_word(char *s)
+{
+	int flag, x, y;
+
+	flag = 0;
+	y = 0;
+
+	for (x = 0; s[x] != '\0'; x++)
+	{
+		if (s[x] == ' ')
+			flag = 0;
+		else if (flag == 0)
+		{
+			flag = 1;
+			y++;
+		}
+	}
+	return (y);
+}
+
+/**
  * strtow - splits a string into words
  * @str: string to split
  * Return: NULL if function fails, or str is either NULL or ""
@@ -10,43 +35,38 @@
 
 char **strtow(char *str)
 {
-	char **array;
-	int i = 0, j, x, y = 0, len = 0, cnt = 0;
+	char **matrix, *tmp;
+	int i, j = 0, len = 0, words, c = 0, start, end;
 
-	if (str == NULL || *str == '\0')
+	while (*(str + len))
+		len++;
+	words = count_word(str);
+	if (words == 0)
 		return (NULL);
-	for (; str[i]; i++)
+
+	for (i = 0; i <= len; i++)
 	{
-		if ((str[i] != ' ' || *str != '\t') &&
-				((str[i + 1] == ' ' || str[i + 1] == '\t') || str[i + 1] == '\n'))
-			cnt++;
-	}
-	if (cnt == 0)
-		return (NULL);
-	array = malloc(sizeof(char *) * (cnt + 1));
-	if (array == NULL)
-		return (NULL);
-	for (i = 0; str[i] != '\0' && y < cnt; i++)
-	{
-		if (str[i] != ' ' || str[i] != '\t')
+		if (str[i] == ' ' || str[i] == '\0')
 		{
-			j = i;
-			while ((str[j] != ' ' || str[j] != '\t') &&
-					str[j] != '\0')
-				j++, len++;
-			array[y] = malloc((len + 1) * sizeof(char));
-			if (array[y] == NULL)
+			if (c)
 			{
-				for (y = y - 1; y >= 0; y++)
-					free(array[y]);
-				free(array);
-				return (NULL);
+				end = i;
+				tmp = (char *) malloc(sizeof(char) *
+						(c + 1));
+				if (tmp == NULL)
+					return (NULL);
+
+				while (start < end)
+					*tmp++ = str[start++];
+				*tmp = '\0';
+				matrix[j] = tmp - c;
+				j++;
+				c = 0;
 			}
-			for (x = 0; x < len; x++, i++)
-				array[y][x] = str[i];
-			array[y++][x] = '\0';
 		}
+		else if (c++ == 0)
+			start = i;
 	}
-	array[y] = NULL;
-	return (array);
+	matrix[j] = NULL;
+	return (matrix);
 }
