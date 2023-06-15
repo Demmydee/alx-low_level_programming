@@ -6,7 +6,7 @@
   * @head: The head of the doubly linked list
   * @index: The index of the node in the doubly linked list
   *
-  * Return: A specified node of the doubly linked list or null 
+  * Return: A specified node of the doubly linked list or null
   * if node does not exist
   */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
