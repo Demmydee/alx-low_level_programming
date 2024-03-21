@@ -10,7 +10,7 @@
  * if it failed
  */
 
-dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *n_node;
 	dlistint_t *h;
@@ -26,7 +26,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (h != NULL)
 	{
 		while (h->next != NULL)
-			h = h->nex;
+			h = h->next;
 		h->next = n_node;
 	}
 	else
