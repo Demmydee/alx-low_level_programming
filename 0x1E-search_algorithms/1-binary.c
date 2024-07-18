@@ -2,7 +2,7 @@
 
 /**
   * binary_search - Searches for a value in a sorted array of integers
-  * 			using binary search algorithm
+  *			using binary search algorithm
   * @array: A pointer to the first element of the array to search in
   * @size: The number of elements in array
   * @value: The value to search for
